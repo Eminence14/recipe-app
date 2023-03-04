@@ -1,0 +1,73 @@
+body {
+    background-color: #0e1b4d;
+    color: rgba(255, 255, 255, 75%);
+    font-family: Archivo, sans;
+    position: relative;
+}
+
+@font-face {
+    font-family: Archivo;
+    src: url('./Archivo-Regular.ttf');
+}
+
+.App {
+    position: relative;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 2em auto 1em;
+    background-color: #0000005c;
+    padding: 1em;
+    position: relative;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    font-size: 1.3em;
+    color: #f7f5f3a8;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+form button {
+    background-color: #f7f5f3a8;
+    color: #0e1b4d;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    cursor: pointer;
+    padding: 0 1em;
+    border-radius: 0 10px 10px 0;
+}
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1em;
+
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading img {
+    width: 200px;
+    object-fit: cover;
+}
