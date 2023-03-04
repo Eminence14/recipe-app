@@ -51,7 +51,7 @@ form button {
 
 .recipe-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1em;
 
 }
@@ -70,4 +70,20 @@ form button {
 .loading img {
     width: 200px;
     object-fit: cover;
+}
+
+.attribution {
+    width: 70%;
+    margin: 1em auto;
+    background: transparent;
+    text-align: center;
+}
+
+.attribution a {
+    color: white;
+    text-decoration: underline;
+}
+
+.attribution a:not(:last-child) {
+    margin-right: 1em;
 }
